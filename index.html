@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Cálculo de IMC com  JavaScript</title>
+</head>
+<style type="text/css">
+	.imc{position: absolute; top:50%; left:50%; transform: translate(-50%, -50%);}
+	h2, h3, h4{text-align: center; font-size: 1.2em}
+
+	body{background-color: #ddd}
+</style>
+<body>
+	<div class="imc">
+		<h2>Calculando IMC utilizando JavaScript</h2>
+		<img src="calcular_imc.png" alt="Tabela de cálculo de IMC" id="tabela_calculo" style="width:500px">
+		<h3>Seu resultado: <span id="resultado"></span></h3>
+		<h4></h4>
+		<form name="frm_imc">
+			<input type="text" placeholder="Peso" name="txtPeso" size="15" style="text-align: center">
+			<input type="text" placeholder="Altura" name="txtAltura" size="15" style="text-align: center"><br><br>
+			<input type="button" value="Calcular" onclick="calcular_imc()">
+			<input type="reset" value="Novo cálculo" onclick="limpar()">
+		</form>
+	</div>
+
+	<script src="calculo_imc.js"></script>
+</body>
+</html>
